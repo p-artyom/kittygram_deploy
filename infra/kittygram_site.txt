@@ -1,0 +1,5 @@
+IP: 158.160.15.128;
+name_taski: https://partyoms.sytes.net/;
+name_kittygram: https://partyomkittygram.sytes.net/;
+login: yc-user;
+password: yc-user123456789;
