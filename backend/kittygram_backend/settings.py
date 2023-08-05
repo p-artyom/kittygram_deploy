@@ -12,14 +12,9 @@ if os.path.exists(DOTENV_PATH):
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = False
+DEBUG = os.getenv('DEBUG') == 'True'
 
-ALLOWED_HOSTS = [
-    '158.160.15.128',
-    '127.0.0.1',
-    'localhost',
-    'partyomkittygram.sytes.net',
-]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
